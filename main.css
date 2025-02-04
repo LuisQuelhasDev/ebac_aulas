@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form input{
+    display: block;
+    padding: 8px;
+    margin: 8px 0;
+    width: 300px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+
+}
+
+form button{
+    width: 300px;
+    padding: 4px;
+    cursor: pointer;
+    background-color: rgba(0, 253, 0, 0.651);
+    border-color: rgba(2, 159, 2, 0.526);
+    font-weight: bold;
+}
+
+.message{
+    padding: 18px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.positive{
+    font-size: 20px;
+    color: green;
+    padding: 8px 0;
+
+}
+
+.negative{
+    font-size: 20px;
+    color: red;
+    padding: 8px 0;
+}
+
+h1, .positive, .negative, h3, input, button{
+    font-family: Arial;
+}
+
+body{
+    background-color: rgba(128, 128, 128, 0.163);
+}
