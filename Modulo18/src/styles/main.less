@@ -1,0 +1,65 @@
+@backgroundBody: #fed330;
+@backgroundButton: #f7b731;
+@fontTitulo: Kaushan script, sans-serif;
+@fontButton: Aladin;
+
+main{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body{
+    background-color: @backgroundBody;
+
+    h1{
+    font-family: @fontTitulo;
+    font-size: 66px;
+    }
+
+    label{
+        font-family: @fontTitulo;
+        font-size: 26px;
+        font-weight: bold;
+    }
+}
+
+input{
+    display: block;
+    margin: 12px auto 0;
+    padding: 8px;
+    width: 20%;
+    background-color: @backgroundButton;
+    border-color: @backgroundButton;
+    border-radius: 3px;
+}
+
+button{
+    cursor: pointer;
+    background-color: @backgroundButton;
+    font-family: @fontButton;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    width: 20%;
+    transition: all ease 0.3s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.resultado{
+    padding: 16px 0;
+    font-size: 26px;
+    font-family: @fontButton;
+    display: none;
+    span{
+        font-size: 30px;
+        display: block;
+        text-decoration: underline;
+    }
+}
