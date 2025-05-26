@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const seguidores = document.getElementById("followers");
     const seguindo = document.getElementById("following");
     const link= document.getElementById("link");
-
+    
     fetch(endpoint).then(function(resposta){
         return resposta.json();
     })
@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function(){
         link.href = json.html_url;
     })
     .catch(function(erro){
-        alert("Algumas informações não foram cadastradas!")
+        alert("404 Not Found")
     })
 })
